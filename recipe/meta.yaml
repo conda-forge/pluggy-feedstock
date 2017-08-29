@@ -1,14 +1,14 @@
 {% set name = "pluggy" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "dd841b5d290b252cf645f75f3bd37ceecfa0f36394ab313e4f785fe68a4081a4" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "39c06527c94775911c4a3fc0ad409a1ba48ec509b0054590eb65d967964eec3a" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -39,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - JohnGreeley
+    - nicoddemus
