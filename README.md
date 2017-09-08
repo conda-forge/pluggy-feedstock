@@ -14,9 +14,7 @@ Summary: Plugin registration and hook calling for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pluggy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pluggy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pluggy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pluggy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pluggy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pluggy-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pluggy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pluggy-feedstock)
 
 Current release info
 ====================
