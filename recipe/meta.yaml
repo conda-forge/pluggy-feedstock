@@ -8,7 +8,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  # url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.python.org/packages/1b/a9/6f5f80b75a8d84d21a8a13486fe26a2da9f043f93b464b2e3928be256dc4/pluggy-0.3.1.tar.gz#md5=ecdd791e309f60668b66fec97c2ee7db
   sha256: {{ sha256 }}
 
 build:
