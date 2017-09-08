@@ -1,19 +1,20 @@
 {% set name = "pluggy" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "dd841b5d290b252cf645f75f3bd37ceecfa0f36394ab313e4f785fe68a4081a4" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "bd60171dbb250fdebafad46ed16d97065369da40568ae948ef7117eee8536e94" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -39,3 +40,5 @@ about:
 extra:
   recipe-maintainers:
     - JohnGreeley
+    - nicoddemus
+    - tgoodlet
