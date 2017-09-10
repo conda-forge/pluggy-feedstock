@@ -1,6 +1,6 @@
 {% set name = "pluggy" %}
-{% set version = "0.5.2" %}
-{% set sha256 = "bd60171dbb250fdebafad46ed16d97065369da40568ae948ef7117eee8536e94" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "159cc783e056c07da6552aa5aef6b1e6c0064b4f18bd49c531fd2d40aafb0ea3" %}
 
 package:
   name: {{ name }}
