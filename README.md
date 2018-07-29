@@ -14,12 +14,15 @@ Summary: Plugin registration and hook calling for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pluggy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pluggy-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pluggy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pluggy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pluggy/badges/version.svg)](https://anaconda.org/conda-forge/pluggy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pluggy/badges/downloads.svg)](https://anaconda.org/conda-forge/pluggy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pluggy-green.svg)](https://anaconda.org/conda-forge/pluggy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pluggy.svg)](https://anaconda.org/conda-forge/pluggy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pluggy.svg)](https://anaconda.org/conda-forge/pluggy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pluggy.svg)](https://anaconda.org/conda-forge/pluggy) |
 
 Installing pluggy
 =================
@@ -64,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
