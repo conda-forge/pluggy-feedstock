@@ -23,6 +23,7 @@ requirements:
 
   run:
     - python
+    - importlib_metadata >=0.12
 
 test:
   imports:
