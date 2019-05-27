@@ -120,5 +120,4 @@ Feedstock Maintainers
 
 * [@JohnGreeley](https://github.com/JohnGreeley/)
 * [@nicoddemus](https://github.com/nicoddemus/)
-* [@tgoodlet](https://github.com/tgoodlet/)
 
