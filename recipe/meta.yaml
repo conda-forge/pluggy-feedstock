@@ -1,6 +1,6 @@
 {% set name = "pluggy" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "0825a152ac059776623854c1543d65a4ad408eb3d33ee114dff91e57ec6ae6fc" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "fa5fa1622fa6dd5c030e9cad086fa19ef6a0cf6d7a2d12318e10cb49d6d68f34" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: python -m pip install . --no-deps --ignore-installed
-  noarch: python
 
 requirements:
   build:
@@ -23,7 +22,7 @@ requirements:
 
   run:
     - python
-    - importlib_metadata >=0.12
+    - importlib_metadata >=0.12  # [py<38]
 
 test:
   imports:
