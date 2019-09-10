@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: python -m pip install . --no-deps --ignore-installed
-  noarch: python
 
 requirements:
   build:
@@ -23,7 +22,7 @@ requirements:
 
   run:
     - python
-    - importlib_metadata >=0.12
+    - importlib_metadata >=0.12  # [py<38]
 
 test:
   imports:
