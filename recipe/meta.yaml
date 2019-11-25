@@ -7,19 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
-  build:
+  host:
+    - python
     - pip
     - setuptools_scm
-
   run:
     - python
     - importlib_metadata >=0.12  # [py<38]
