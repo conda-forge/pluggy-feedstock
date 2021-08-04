@@ -320,6 +320,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@adriendelsalle](https://github.com/adriendelsalle/)
 * [@johnnygenomics](https://github.com/johnnygenomics/)
 * [@nicoddemus](https://github.com/nicoddemus/)
 
