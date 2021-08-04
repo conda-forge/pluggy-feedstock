@@ -19,11 +19,11 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.5
     - pip
     - setuptools_scm
   run:
-    - python
+    - python >=3.5
     - importlib_metadata >=0.12  # [py<38]
 
 test:
