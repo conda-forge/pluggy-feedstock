@@ -1,35 +1,35 @@
 {% set name = "pluggy" %}
 {% set version = "1.0.0" %}
-{% set sha256 = "4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name [0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pluggy-{{ version }}.tar.gz
+  sha256: 4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159
 
 build:
-  number: 4
-  skip: true  # [py<35]
-  script: python -m pip install . --no-deps --ignore-installed
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 5
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
+    - setuptools-scm
     - pip
-    - setuptools_scm
   run:
     - python
-    - importlib_metadata >=0.12  # [py<38]
+    - importlib-metadata >=0.12
 
 test:
   imports:
     - pluggy
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pytest-dev/pluggy
