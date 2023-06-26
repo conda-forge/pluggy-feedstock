@@ -1,5 +1,5 @@
 {% set name = "pluggy" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pluggy-{{ version }}.tar.gz
-  sha256: c500b592c5512df35622e4faf2135aa0b7e989c7d31344194b4afb9d5e47b1bf
+  sha256: d12f0c4b579b15f5e054301bb226ee85eeeba08ffec228092f8defbaa3a4c4b3
 
 build:
   noarch: python
