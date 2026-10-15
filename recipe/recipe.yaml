@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pluggy
-  version: "1.6.0"
+  version: "1.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,11 +10,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pluggy-${{ version }}.tar.gz
-  sha256: 7dcc130b76258d33b90f61b658791dede3486c3e6bfb003ee5c9bfb396dd22f3
+  sha256: d1eaa46ebb595891b860ab086b4d09c8588af65ebd4361b8e8f4bb8920b90ba8
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
